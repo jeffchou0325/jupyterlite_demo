@@ -1,4 +1,5 @@
 jupyterlab-open-url-parameter
+jupyterlab-fileopen
 
 # Core modules (mandatory)
 jupyterlite-core==0.1.0
