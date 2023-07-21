@@ -1,3 +1,5 @@
+jupyterlab-open-url-parameter
+
 # Core modules (mandatory)
 jupyterlite-core==0.1.0
 jupyterlab~=3.5.1
