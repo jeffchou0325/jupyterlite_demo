@@ -1,0 +1,2 @@
+c.GitHubConfig.access_token = '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'
+c.ServerApp.iopub_data_rate_limit = 10000000
