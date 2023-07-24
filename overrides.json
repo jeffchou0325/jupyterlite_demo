@@ -1,7 +1,5 @@
 {
-  "@jupyterlab/apputils-extension:themes": {
-    "theme": "JupyterLab Dark"
-  },
+  "@jupyterlab/apputils-extension:themes": {"theme": "JupyterLab Dark"},
   "@jupyterlab/github": {"baseUrl": "https://github.com",
                          "accessToken": "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",
                          "defaultRepo": "jeffchou0325/RTK_PKG_SW_Group_Seminar"}
