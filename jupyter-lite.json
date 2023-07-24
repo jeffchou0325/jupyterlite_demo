@@ -1,12 +1,6 @@
 {
     "jupyter-lite-schema-version": 0,
-    "jupyter-config-data": {
-      "appName": "RTK_PKG_Jupyter",
-      "disabledExtensions": [
-        "@jupyterlab/drawio-extension",
-        "jupyterlab-kernel-spy",
-        "jupyterlab-tour"
-      ]
-    },
-  }
+    "jupyter-config-data": {"appName": "RTK_PKG_Jupyter",
+                            "disabledExtensions": ["@jupyterlab/drawio-extension", "jupyterlab-kernel-spy", "jupyterlab-tour"]}
+}
   
