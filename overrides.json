@@ -2,5 +2,7 @@
   "@jupyterlab/apputils-extension:themes": {
     "theme": "JupyterLab Dark"
   },
-  "@jupyterlite/server": {"GitHubConfig": {"access_token": "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"}}
+  "@jupyterlab/github": {"baseUrl": "https://github.com",
+                         "accessToken": "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",
+                         "defaultRepo": "jeffchou0325/RTK_PKG_SW_Group_Seminar"}
 }
