@@ -27,7 +27,7 @@ jobs:
           jupyter server extension list
           jupyter server extension enable jupyterlab_github
           jupyter server --generate-config
-          python -c "f = open('/home/runner/.jupyter/jupyter_server_config.py', 'a'); f.write('\nc.GitHubConfig.access_token="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"'); f.close()"
+          python -c "f = open('/home/runner/.jupyter/jupyter_server_config.py', 'a'); f.write('\nc.GitHubConfig.access_token="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"'); f.close()"
           python -c "f = open('/home/runner/.jupyter/jupyter_server_config.py', 'r'); print(f.read()); f.close()"
       - name: Build the JupyterLite site
         run: |
