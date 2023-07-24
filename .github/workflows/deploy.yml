@@ -22,16 +22,19 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
-          python -m pip install pexpect
       - name: Build the JupyterLite site
         run: |
           cp README.md content
           jupyter lite build --contents content --output-dir dist
-          jupyter --paths
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
+      - name: setup github server and token
+        run: |
+          jupyter server extension list
+          jupyter server extension enable jupyterlab_github
+          jupyter server --GitHubConfig.access_token='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'
 
   deploy:
     needs: build
