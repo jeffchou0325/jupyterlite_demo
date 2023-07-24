@@ -26,10 +26,13 @@ jobs:
         run: |
           jupyter server extension list
           jupyter server extension enable jupyterlab_github
+          jupyter server --generate-config
+          python -c "f = open('/home/runner/.jupyter/jupyter_server_config.py', 'a'); f.write('\nc.GitHubConfig.access_token = "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"\nc.ServerApp.iopub_data_rate_limit = 10000000\n'); f.close()"
+          python -c "f = open('/home/runner/.jupyter/jupyter_server_config.py', 'r'); print(f.read()); f.close()"
       - name: Build the JupyterLite site
         run: |
           cp README.md content
-          jupyter lite build --contents content --output-dir dist
+          jupyter lite build --contents content --output-dir dist --config='/home/runner/.jupyter/jupyter_server_config.py'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
