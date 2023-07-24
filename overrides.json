@@ -1,0 +1,6 @@
+{
+  "@jupyterlab/apputils-extension:themes": {
+    "theme": "JupyterLab Dark"
+  },
+  "@jupyterlite/server": {"GitHubConfig": {"access_token": "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"}}
+}
