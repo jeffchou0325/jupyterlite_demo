@@ -26,7 +26,7 @@ jobs:
         run: |
           jupyter server extension list
           jupyter server extension enable jupyterlab_github
-          jupyter server --GitHubConfig.access_token='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'
+          jupyter server --generate-config
       - name: Build the JupyterLite site
         run: |
           cp README.md content
