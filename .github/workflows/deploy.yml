@@ -26,6 +26,8 @@ jobs:
         run: |
           jupyter --paths
           ls /opt/hostedtoolcache/Python/3.11.4/x64/etc/jupyter
+          cp -f jupyterlab_github.json /opt/hostedtoolcache/Python/3.11.4/x64/etc/jupyter/jupyter_server_config.d
+          python -c "f = open('/opt/hostedtoolcache/Python/3.11.4/x64/etc/jupyter/jupyter_server_config.d/jupyterlab_github.json', 'r'); print(f.read())"
           jupyter server extension list
           jupyter server extension enable jupyterlab_github
       - name: Build the JupyterLite site
