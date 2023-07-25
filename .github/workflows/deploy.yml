@@ -24,6 +24,7 @@ jobs:
           python -m pip install -r requirements.txt
       - name: setup github server and token
         run: |
+          jupyter --paths
           jupyter server extension list
           jupyter server extension enable jupyterlab_github
       - name: Build the JupyterLite site
