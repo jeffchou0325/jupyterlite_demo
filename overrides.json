@@ -1,6 +1,6 @@
 {
   "@jupyterlab/apputils-extension:themes": {"theme": "JupyterLab Dark"},
   "@jupyterlab/github:drive": {"baseUrl": "https://github.com",
-                               "accessToken": "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",
+                               "accessToken": "",
                                "defaultRepo": "jeffchou0325/RTK_PKG_SW_Group_Seminar"}
 }
