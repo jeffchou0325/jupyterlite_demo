@@ -1,0 +1,8 @@
+{
+  "ServerApp": {
+    "jpserver_extensions": {
+      "jupyterlab_github": true
+    }
+  },
+  "GitHubConfig": {"access_token": "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"}
+}
