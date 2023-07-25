@@ -25,6 +25,7 @@ jobs:
       - name: setup github server and token
         run: |
           jupyter --paths
+          ls /home/runner/.local/etc/jupyter
           jupyter server extension list
           jupyter server extension enable jupyterlab_github
       - name: Build the JupyterLite site
